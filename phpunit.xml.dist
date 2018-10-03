@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+    backupStaticAttributes="false"
+    bootstrap="vendor/autoload.php"
+    colors="true"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    stopOnError="false"
+    stopOnFailure="false"
+    stopOnIncomplete="false"
+    stopOnSkipped="false"
+    verbose="true">
+
+    <testsuites>
+        <testsuite name="UnitTest">
+            <directory suffix="Test.php">./src/Tests/Plugin/</directory>
+            <directory suffix="Test.php">./src/Tests/Installer/</directory>
+        </testsuite>
+    </testsuites>
+
+    <php>
+        <ini name="memory_limit" value="-1"/>
+        <ini name="error_reporting" value="30719"/> <!-- E_ALL | E_STRICT -->
+    </php>
+</phpunit>
+

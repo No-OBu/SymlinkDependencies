@@ -1,0 +1,22 @@
+{
+    "name": "no_obu/symlink-dependencies",
+    "description": "Composer symlink package installer",
+    "version": "0.0.1-alpha-1",
+    "type": "composer-plugin",
+    "require": {
+        "composer-plugin-api": "^1.1"
+    },
+    "extra": {
+        "class": "No_OBu\\Plugin\\SymlinkDependenciesPlugin"
+    },
+    "autoload": {
+        "psr-4": { "No_OBu\\": ["./src/"] }
+    },
+    "config": {
+        "bin-dir": "./bin"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.3",
+        "composer/composer": "^1.7"
+    }
+}
